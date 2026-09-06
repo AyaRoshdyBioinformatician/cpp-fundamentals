@@ -1,7 +1,11 @@
-#include <iostream>
+#include<iostream>
 int main()
 {
-   std::cout<<"Aya Alaa Roshdy"<<std::endl;
-   std::cout<<"She has a big dream "<<std::endl;
+   std::cout<<"*************************\n";
+   std::cout<<"Name:Aya Alaa Roshdy\n";
+   std::cout<<"Age:32\n";
+   std::cout<<"Country:Egypt\n";
+   std::cout<<"City:Suez\n";
+   std::cout<<"*************************\n";
    return 0;
 }
