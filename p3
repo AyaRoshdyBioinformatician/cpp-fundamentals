@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout<<"i am fraid from learning programming \n";
+    cout<<"but i will try to learn."<<endl;
+    return 0;
+}

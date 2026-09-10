@@ -1,11 +1,12 @@
 #include<iostream>
+using namespace std ;
 int main()
 {
-    std::cout<<"*      *\n";
-    std::cout<<"*      *"<<std::endl;
-    std::cout<<"********"<<std::endl;
-    std::cout<<"*      *\n";
-    std::cout<<"*      *" <<std::endl;
+    cout<<"*      *\n";
+    cout<<"*      *"<<endl;
+    cout<<"********  "<<endl;
+    cout<<"*      *\n";
+    cout<<"*      *" <<endl;
 return 0;
 
 }
