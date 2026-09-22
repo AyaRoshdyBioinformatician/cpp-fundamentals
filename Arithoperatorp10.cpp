@@ -9,11 +9,11 @@ int main()
     cin>>A;
     cout<<"Please enter B \n ";
     cin>>B;
-    cout<<"A+B= "<<A+B<<endl;
-    cout<<"A-B= "<<A-B <<endl;
-    cout<<"A*B= "<<A*B<<endl;
-    cout<<"A/B= " <<A/B<<endl;
-    cout<<"A module B = "<<A%B<<endl;
+    cout<< A<<"+"<< B<<" = " <<A+B<<endl;
+    cout<<A<<"- " <<B<<" = " << A-B <<endl;
+    cout<< A<<"* "<<B <<" = " <<A*B<<endl;
+    cout<<A<<"/ "<<B<<" = " <<A/B<<endl;
+    cout<<A<<"module "<<B <<"=" <<A%B<<endl;
     return 0;
 
 }
