@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
     const float pi=3.14;
-    float r,area,d,area_d;
+    float r,area,d,area_d,squareside,areabysquare;
     cout <<"please enter radius of the circle.\n";
     cin>>r; 
     area=pi*pow(r,2);
@@ -16,6 +16,12 @@ int main()
         cout<<"circle area by radius = "<<area<<endl;
 
     cout <<"the area of circle by diameter = "<<area_d<<endl;
+    cout<<"please enter the squar side: \n";
+    cin>>squareside;
+    areabysquare=pi*(pow(squareside,2)/4);
+    cout <<"the area circle inscribed in square = "<<ceil(areabysquare)<<endl;
+
+
 
     return 0;
 }
