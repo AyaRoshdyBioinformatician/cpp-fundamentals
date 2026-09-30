@@ -1,13 +1,14 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 int main()
 {
     int numofseconds,remainder,numseconds,numdays,numhours,numminute;
     cout<<"please enter the task duration in seconds \n";
     cin>>numofseconds;
-    numdays=numofseconds/(24*60*60);
+    numdays=numofseconds/(24* pow(60,2) );
     remainder=numofseconds % (24*60*60);
-    numhours=remainder/(60*60);
+    numhours=remainder/(pow(60,2));
     remainder=remainder %(60*60);
     numminute=remainder/60;
     numseconds=remainder%60;
