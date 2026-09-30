@@ -10,7 +10,7 @@ int main ()
     cin>>a>>b>>c;
     p=(a+b+c)/2;
     T=(a*b*c)/(4*sqrt(p*(p-a)*(p-b)*(p-c)));
-    T=T*T;
+    T=pow(T,2);
     cout <<"the area of the circle = "<<pi*T<<endl;
     return 0;
     
