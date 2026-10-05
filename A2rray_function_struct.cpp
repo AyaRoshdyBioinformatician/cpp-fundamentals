@@ -13,82 +13,67 @@ struct S_identitycard
 };
 
 
-void F_read1(S_identitycard &person)
+void F_read1(S_identitycard &information)
 {
     cout<<"please enter your first name: \n";
-    cin>>person.firstname;
+    cin>>information.firstname;
     cout<<"please enter your last name : \n";
-    cin>>person.lastname;
+    cin>>information.lastname;
     cout<<"please enter your age : \n";
-    cin>>person.age;
+    cin>>information.age;
     cout<<"enter your phone: \n";
-    cin>>person.phone;
-
-
-
-
-
-
-
-
+    cin>>information.phone;
 }
-//void F_read(S_identitycard person[2])
+
 
    
 
 
-void F_print(S_identitycard person)
+void F_print(S_identitycard information)
 {
-    cout<<"first name : "<<person.firstname<<endl;
-    cout<<"last name : "<<person.lastname<<endl;
-    cout<<"age : "<<person.age<<endl;
-    cout<<"phone : "<<person.phone<<endl;
+    cout<<"first name : "<<information.firstname<<endl;
+    cout<<"last name : "<<information.lastname<<endl;
+    cout<<"age : "<<information.age<<endl;
+    cout<<"phone : "<<information.phone<<endl;
     
 }
-    
-    
 
-
-//void F_reread(S_identitycard person[2])
-//{
-//cout<<"please enter your first name: \n";
-  //  cin>>person[1].firstname;
-    //cout<<"please enter your last name : \n";
-    //cin>>person[1].lastname;
-    //cout<<"please enter your age : \n";
-    //cin>>person[1].age;
-    //cout<<"enter your phone: \n";
-    //cin>>person[1].phone;
-    
-//}
-void F_reprint(S_identitycard person[2])
+void F_readpersonsinfo(S_identitycard persons[2])
 {
+    F_read1(persons[0]);
+    F_read1(persons[1]);
+}
 
-cout<<"first name : "<<person[0].firstname<<endl;
-    cout<<"last name : "<<person[0].lastname<<endl;
-    cout<<"age : "<<person[0].age<<endl;
-    cout<<"phone : "<<person[0].phone<<endl;
-    
-    }
 
+
+void F_printinfoperson(S_identitycard persons[2])
+{
+    cout<<"**************************************************************\n";
+    cout<<"**************************************************************\n";
+    F_print(persons [0]);
+    F_print(persons[1]);
+}
 int main()
 {
     S_identitycard persons[2];
-    F_read1(persons[0]  );
-    cout<<"**************************************************************\n";
+ 
+   // F_read1(persons[0]  );
+    //F_print(persons[0]);
     
-    F_print(persons[0]);
-cout<<"**************************************************************\n";
-cout<<"**************************************************************\n";
-F_read1(persons[1]);
+    //F_read1(persons[1]);
+    //F_print(persons[1]);
+    //cout <<"************************************************\n";
+    //F_print (persons[0]);
+    //cout<<"**************************************************************\n";
+    //F_print(persons[1]);
 
-F_print(persons[1]);
-cout <<"************************************************\n";
-F_print (persons[0]);
-cout<<"**************************************************************\n";
-cout<<"**************************************************************\n";
-F_print(persons[1]);
+
+ F_readpersonsinfo(persons);
+
+    
+ F_printinfoperson( persons);
 return 0;
+    
 
 
 
