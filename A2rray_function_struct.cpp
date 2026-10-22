@@ -39,9 +39,14 @@ void F_print(S_identitycard information)
 }
 
 void F_readpersonsinfo(S_identitycard persons[2])
-{
-    F_read1(persons[0]);
-    F_read1(persons[1]);
+{    
+    for (int i=0;i<=1;i++)
+    {
+        F_read1(persons[i]);
+    }
+
+//F_read1(persons[0]);
+  //  F_read1(persons[1]);
 }
 
 
@@ -50,8 +55,14 @@ void F_printinfoperson(S_identitycard persons[2])
 {
     cout<<"**************************************************************\n";
     cout<<"**************************************************************\n";
-    F_print(persons [0]);
-    F_print(persons[1]);
+    for (int i=0;i<=1;i++)
+    {
+        F_print(persons[i]);
+    }
+    
+    
+    //F_print(persons [0]);
+    //F_print(persons[1]);
 }
 int main()
 {
